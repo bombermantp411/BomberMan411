@@ -1,0 +1,8 @@
+#!/bin/sh
+echo "Install"
+CLASSPATH=.:..:../..
+echo "compilation"
+javac Bomberman.java
+echo "creation de la javadoc"
+javadoc base element element.bloc element.joueur general niveau niveau.level reseau zone zone.zonejeu -d docs/javadoc -author -version
+echo "Install End"
